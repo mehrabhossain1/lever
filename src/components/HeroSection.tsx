@@ -67,7 +67,7 @@ const HeroSection: React.FC<HeroProps> = ({
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between lg:gap-12">
         {/* Text Content */}
         <div className="lg:w-1/2 text-center lg:text-left space-y-8">
           <div className="space-y-2">
