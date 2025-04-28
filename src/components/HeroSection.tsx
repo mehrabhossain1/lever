@@ -1,5 +1,5 @@
 "use client";
-
+import { motion } from "framer-motion";
 import type React from "react";
 
 import { useEffect, useRef, useState } from "react";
@@ -74,9 +74,33 @@ const HeroSection: React.FC<HeroProps> = ({
             <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 mt-5 lg:mt-8">
               New Features Available
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight bg-gradient-to-r from-blue-800 via-sky-600 to-blue-800 bg-[length:200%_200%] animate-gradient text-transparent bg-clip-text">
-              {headline}
-            </h1>
+
+            {/* Framer motion stagger */}
+            <motion.h1
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight bg-gradient-to-r from-blue-800 via-sky-600 to-blue-800 bg-[length:200%_200%] animate-gradient text-transparent bg-clip-text"
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: {},
+                visible: {
+                  transition: {
+                    staggerChildren: 0.05, // 0.05s delay between each letter
+                  },
+                },
+              }}
+            >
+              {headline.split("").map((char, index) => (
+                <motion.span
+                  key={index}
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                >
+                  {char}
+                </motion.span>
+              ))}
+            </motion.h1>
           </div>
           <p className="text-lg sm:text-xl text-gray-600 max-w-xl mx-auto lg:mx-0">
             {subheadline}
