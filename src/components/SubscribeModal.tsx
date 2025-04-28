@@ -38,7 +38,7 @@ const SubscribeModal = ({ isOpen, onClose }: SubscribeModalProps) => {
         }
       }}
     >
-      <DialogContent className="sm:max-w-[500px]">
+      <DialogContent className="sm:max-w-[500px] overflow-y-auto max-h-dvh">
         <DialogHeader>
           <DialogTitle className="font-bold">Subscribe</DialogTitle>
           <DialogDescription>
