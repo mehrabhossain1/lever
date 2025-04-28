@@ -1,7 +1,8 @@
-import AutoplayCarousel from "@/components/AutoplayCarousel";
+import HeroSection from "@/components/HeroSection";
 import Search from "@/components/Search";
 import Navbar from "@/components/shared/Navbar";
 import NavLinksBar from "@/components/shared/NavLinksBar";
+// import AutoplayCarousel from "@/components/AutoplayCarousel";
 
 const Home = () => {
   return (
@@ -9,7 +10,12 @@ const Home = () => {
       <Navbar />
       <Search />
       <NavLinksBar />
-      <AutoplayCarousel />
+      {/* <AutoplayCarousel /> */}
+      <HeroSection
+        headline="Connect with Expert Liver Physicians"
+        subheadline="Submit your condition and receive personalized treatment plans from trusted specialists."
+        ctaText="Get Started"
+      />
     </div>
   );
 };
