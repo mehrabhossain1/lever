@@ -3,7 +3,7 @@ import { Separator } from "@/components/ui/separator";
 export function Footer() {
   return (
     <footer className="w-full bg-blue-800 text-white">
-      <div className="max-w-7xl mx-auto px-4 py-10">
+      <div className="container mx-auto px-4 py-10">
         {/* Top separator line */}
         <Separator className="bg-white/20 mb-6" />
 
