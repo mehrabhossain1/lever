@@ -40,7 +40,10 @@ const NavLinksBar = () => {
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="bg-sky-500 text-white">
+            <SheetContent
+              side="left"
+              className="bg-sky-500 text-white border-none"
+            >
               <div className="flex flex-col gap-4 mt-8">
                 {links.map((link, index) => {
                   if (link.name === "Subscribe") {
