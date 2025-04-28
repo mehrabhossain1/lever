@@ -29,8 +29,8 @@ const HeroSection: React.FC<HeroProps> = ({
   // Array of images for the carousel
   const images = [
     "https://img.freepik.com/premium-photo/glass-whiskey-half-full-glass-alcohol_1321053-599.jpg?w=996",
-    "https://img.freepik.com/free-vector/late-stage-scarring-liver_1308-50368.jpg?t=st=1745867748~exp=1745871348~hmac=8e1fc14f5bf4a1790b252e4e2f92cbd9c8471fcc107a1b14e1d2e22a925549f4&w=996",
     "https://img.freepik.com/premium-photo/liver-organic-background_59529-14.jpg?w=900",
+    "https://img.freepik.com/free-vector/informative-poster-alcoholic-liver-disease-cirrhosis_1308-130699.jpg?t=st=1745880433~exp=1745884033~hmac=2fb051c3042f7e3d030f0d114014caec6f15817d72449c6eacab6e7a03889eac&w=900",
   ];
 
   const [api, setApi] = useState<CarouselApi>();
