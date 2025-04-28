@@ -73,7 +73,8 @@ export function PatientForm({ onBack }: PatientFormProps) {
           type="button"
           variant="ghost"
           onClick={onBack}
-          className="mb-2 p-0 h-auto"
+          className="mb-2 p-0 h-auto bg-destructive/10 text-destructive hover:bg-destructive/20 hover:text-destructive rounded-md"
+          aria-label="Back"
         >
           <ChevronLeft className="h-4 w-4 mr-1" /> Back
         </Button>
@@ -237,7 +238,11 @@ export function PatientForm({ onBack }: PatientFormProps) {
         </div>
 
         <div className="flex justify-end pt-4">
-          <Button type="submit" disabled={isSubmitting}>
+          <Button
+            type="submit"
+            disabled={isSubmitting}
+            className="rounded-full bg-blue-800 hover:bg-blue-900"
+          >
             {isSubmitting ? "Submitting..." : "Subscribe"}
           </Button>
         </div>

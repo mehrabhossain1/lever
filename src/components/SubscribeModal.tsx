@@ -7,11 +7,12 @@ import {
   DialogHeader,
   DialogTitle,
   DialogDescription,
-  DialogFooter,
+  //   DialogFooter,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { PatientForm } from "./forms/PatientForm";
 import { PhysicianForm } from "./forms/PhysicianForm";
+import { Stethoscope, Users } from "lucide-react";
 
 type SubscribeModalProps = {
   isOpen: boolean;
@@ -39,7 +40,7 @@ const SubscribeModal = ({ isOpen, onClose }: SubscribeModalProps) => {
     >
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
-          <DialogTitle>Subscribe</DialogTitle>
+          <DialogTitle className="font-bold">Subscribe</DialogTitle>
           <DialogDescription>
             Choose your subscription type to receive relevant information.
           </DialogDescription>
@@ -48,18 +49,18 @@ const SubscribeModal = ({ isOpen, onClose }: SubscribeModalProps) => {
         {userType === "none" && (
           <div className="grid grid-cols-2 gap-4 py-4">
             <Button
-              variant="outline"
-              className="h-20 text-lg"
+              //   variant="outline"
+              className="h-20 text-lg bg-red-700 text-white hover:bg-red-800 rounded-full"
               onClick={() => setUserType("patient")}
             >
-              Patient
+              <Users /> Patient
             </Button>
             <Button
-              variant="outline"
-              className="h-20 text-lg"
+              //   variant="outline"
+              className="h-20 text-lg bg-blue-800 text-white hover:bg-blue-900 rounded-full"
               onClick={() => setUserType("physician")}
             >
-              Physician
+              <Stethoscope /> Physician
             </Button>
           </div>
         )}
@@ -67,13 +68,17 @@ const SubscribeModal = ({ isOpen, onClose }: SubscribeModalProps) => {
         {userType === "patient" && <PatientForm onBack={handleReset} />}
         {userType === "physician" && <PhysicianForm onBack={handleReset} />}
 
-        {userType === "none" && (
+        {/* {userType === "none" && (
           <DialogFooter>
-            <Button variant="outline" onClick={onClose}>
+            <Button
+              //   variant="outline"
+              onClick={onClose}
+              className="rounded-full bg-destructive text-white hover:bg-destructive/80"
+            >
               Cancel
             </Button>
           </DialogFooter>
-        )}
+        )} */}
       </DialogContent>
     </Dialog>
   );
