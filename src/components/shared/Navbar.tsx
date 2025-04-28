@@ -15,7 +15,7 @@ const Navbar = () => {
           Liver Disease Awareness
         </div>
       </div>
-      <div className="flex gap-2 md:gap-4">
+      <div className="flex gap-2">
         <Button className="bg-blue-800 hover:bg-blue-900 rounded-full">
           Admin Login
         </Button>

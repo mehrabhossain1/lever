@@ -71,7 +71,7 @@ const HeroSection: React.FC<HeroProps> = ({
         {/* Text Content */}
         <div className="lg:w-1/2 text-center lg:text-left space-y-8">
           <div className="space-y-2">
-            <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 my-4">
+            <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 mt-5 lg:mt-8">
               New Features Available
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight bg-gradient-to-r from-blue-800 via-sky-600 to-blue-800 bg-[length:200%_200%] animate-gradient text-transparent bg-clip-text">
