@@ -31,7 +31,7 @@ const NavLinksBar = () => {
 
   return (
     <>
-      <nav className="w-full bg-sky-500 shadow-sm">
+      <nav className="w-full bg-sky-500 shadow-sm sticky top-0 z-50 lg:static">
         <div className="flex items-center justify-between px-4 py-3 md:hidden">
           {/* Mobile: Hamburger */}
           <Sheet>

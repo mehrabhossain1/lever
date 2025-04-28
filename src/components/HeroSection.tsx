@@ -134,7 +134,7 @@ const HeroSection: React.FC<HeroProps> = ({
                         <img
                           src={src || "/placeholder.svg"}
                           alt={`Medical care image ${index + 1}`}
-                          className="w-full h-[300px] sm:h-[400px] object-cover transition-all hover:scale-105 duration-500"
+                          className="w-full h-[300px] sm:h-[400px] transition-all hover:scale-105 duration-500"
                         />
                       </div>
                     </div>
