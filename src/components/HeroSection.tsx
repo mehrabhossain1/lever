@@ -82,7 +82,7 @@ const HeroSection: React.FC<HeroProps> = ({
             {subheadline}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <div className="flex flex-col sm:flex-row gap-2 lg:gap-4 justify-center lg:justify-start">
             <Button
               size="lg"
               className="text-md font-medium bg-blue-800 hover:bg-blue-900 rounded-full"
