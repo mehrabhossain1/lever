@@ -14,9 +14,10 @@ function App() {
   return (
     <>
       <TopBar />
-      <Navbar />
-      <Search />
+
       <Router>
+        <Navbar />
+        <Search />
         <ScrollToTop />
         <NavLinksBar />
         <Routes>
