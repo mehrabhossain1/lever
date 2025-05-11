@@ -7,6 +7,7 @@ import Search from "./components/Search";
 import NavLinksBar from "./components/shared/NavLinksBar";
 import { Footer } from "./components/shared/Footer";
 import LiveWebinars from "./pages/Live-Webinars";
+import Live from "./pages/Live";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/live-webinars" element={<LiveWebinars />} />
+                    <Route path="/live" element={<Live />} />
                 </Routes>
             </Router>
             <Footer />
