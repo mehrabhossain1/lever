@@ -1,6 +1,6 @@
 export default function Live() {
     return (
-        <div className="min-h-screen bg-gradient-to-b from-sky-50 to-white flex flex-col items-center justify-center py-12 px-4">
+        <div className="bg-gradient-to-b from-sky-50 to-white flex flex-col items-center justify-center py-12 px-4">
             <h1 className="text-3xl md:text-4xl font-bold text-sky-800 mb-6 text-center">
                 Watch Our Facebook Live
             </h1>
@@ -9,7 +9,7 @@ export default function Live() {
                 latest updates, discussions, and events happening right now on
                 our Facebook Live stream.
             </p>
-            <div className="w-full max-w-3xl aspect-video shadow-lg rounded-lg overflow-hidden">
+            <div className="w-full max-w-5xl aspect-video shadow-lg rounded-lg overflow-hidden">
                 <iframe
                     src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FJamunatvglobal%2Fvideos%2F983556650253851%2F&show_text=false&width=560&t=0"
                     width="100%"
