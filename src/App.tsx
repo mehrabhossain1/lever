@@ -1,22 +1,19 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import LiveWebinars from "./pages/Live-Webinars";
 
 function App() {
-  return (
-    <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          {/* <Route path="/" element={<Dashboard />} /> */}
-          {/* <Route path="/inventory" element={<Inventory />} />
-          <Route path="/inventory/add" element={<AddInventory />} />
-          <Route path="/sales" element={<Sales />} />
-          <Route path="/sales/add" element={<AddSale />} /> */}
-        </Routes>
-      </Router>
-    </>
-  );
+    return (
+        <>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/live-webinars" element={<LiveWebinars />} />
+                </Routes>
+            </Router>
+        </>
+    );
 }
 
 export default App;
