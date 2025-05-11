@@ -332,6 +332,8 @@ export default function LiveWebinars() {
         }
     };
 
+    const navigate = useNavigate();
+
     return (
         <div className="min-h-screen bg-gradient-to-b from-sky-50 to-white">
             <div className="container mx-auto py-12 px-4 md:px-6">
@@ -359,7 +361,10 @@ export default function LiveWebinars() {
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5 }}
-                        className="mb-12 rounded-xl overflow-hidden shadow-xl"
+                        className="mb-12 rounded-xl overflow-hidden shadow-xl cursor-pointer"
+                        onClick={() =>
+                            navigate(`/live-webinars/${featuredWebinar.title}`)
+                        }
                     >
                         <div className="bg-gradient-to-r from-blue-600 to-sky-400 p-1">
                             <div className="bg-white dark:bg-slate-950 rounded-t-lg">
@@ -677,7 +682,7 @@ function WebinarCard({
             className="h-full cursor-pointer"
             onClick={() => navigate(`/live-webinars/${webinar.title}`)}
         >
-            <Card className="h-full flex flex-col overflow-hidden border-sky-100 hover:shadow-xl hover:shadow-sky-100/50 transition-all duration-300">
+            <Card className="h-full flex flex-col overflow-hidden border-sky-100 hover:shadow-xl hover:shadow-sky-100/50 transition-all duration-300 py-0 pb-6">
                 <div className="relative">
                     <img
                         src={webinar.thumbnail || "/placeholder.svg"}
