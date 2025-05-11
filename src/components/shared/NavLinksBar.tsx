@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import SubscribeModal from "../SubscribeModal";
 import { Menu } from "lucide-react"; // for hamburger icon
@@ -24,6 +24,7 @@ const links = [
 
 const NavLinksBar = () => {
     const [showSubscribeModal, setShowSubscribeModal] = useState(false);
+    const location = useLocation(); // Get the current location
 
     const handleLinkClick = (linkName: string) => {
         if (linkName === "Subscribe") {
@@ -35,7 +36,7 @@ const NavLinksBar = () => {
 
     return (
         <>
-            <nav className="w-full bg-sky-500 shadow-sm sticky top-0 z-50 lg:static">
+            <nav className="w-full bg-sky-800 shadow-sm sticky top-0 z-50">
                 <div className="flex items-center justify-between px-4 py-3 md:hidden">
                     {/* Mobile: Hamburger */}
                     <Sheet>
@@ -78,7 +79,12 @@ const NavLinksBar = () => {
                                         >
                                             <Button
                                                 variant="ghost"
-                                                className="w-full justify-start text-white"
+                                                className={`w-full justify-start text-white ${
+                                                    location.pathname ===
+                                                    link.path
+                                                        ? "bg-sky-400"
+                                                        : ""
+                                                }`}
                                             >
                                                 {link.name}
                                             </Button>
@@ -94,14 +100,18 @@ const NavLinksBar = () => {
                 </div>
 
                 {/* Desktop: Full Nav */}
-                <div className="hidden md:flex items-center justify-between divide-x divide-sky-300">
+                <div className="hidden md:flex items-center justify-between divide-x divide-sky-300 bg-sky-800 py-2 px-4">
                     {links.map((link, index) => {
                         if (link.name === "Subscribe") {
                             return (
                                 <div key={index} className="flex-grow">
                                     <Button
                                         variant="ghost"
-                                        className="rounded-none px-6 py-4 text-white hover:bg-sky-400 w-full text-sm font-medium"
+                                        className={`rounded-none px-6 py-4 text-white hover:bg-sky-400 hover:text-white w-full text-sm font-medium ${
+                                            location.pathname === link.path
+                                                ? "bg-sky-400"
+                                                : ""
+                                        }`}
                                         onClick={() =>
                                             setShowSubscribeModal(true)
                                         }
@@ -120,7 +130,11 @@ const NavLinksBar = () => {
                             >
                                 <Button
                                     variant="ghost"
-                                    className="rounded-none px-6 py-4 text-white hover:bg-sky-400 w-full text-sm font-medium"
+                                    className={`rounded-none px-6 py-4 text-white hover:bg-sky-400 hover:text-white w-full text-sm font-medium ${
+                                        location.pathname === link.path
+                                            ? "bg-sky-400 "
+                                            : ""
+                                    }`}
                                     onClick={() => handleLinkClick(link.name)}
                                 >
                                     {link.name}
