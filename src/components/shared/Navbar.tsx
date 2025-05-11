@@ -5,7 +5,7 @@ const Navbar = () => {
         <nav className="flex items-center justify-between px-4 py-2 bg-sky-600 shadow-md">
             {/* <div className="text-2xl font-bold text-gray-800">Liver</div> */}
             <div className="flex items-center gap-1">
-                <img src="/Logo1.png" alt="Logo" className="h-28 lg:h-32" />
+                <img src="/Logo1.png" alt="Logo" className="h-20 lg:h-24" />
 
                 <div className="hidden lg:block text-6xl font-bold text-white">
                     BSLCTR

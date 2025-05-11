@@ -6,6 +6,7 @@ import TopBar from "./components/shared/TopBar";
 import Navbar from "./components/shared/Navbar";
 import Search from "./components/Search";
 import NavLinksBar from "./components/shared/NavLinksBar";
+import { Footer } from "./components/shared/Footer";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/live-webinars" element={<LiveWebinars />} />
                 </Routes>
             </Router>
+            <Footer />
         </>
     );
 }
