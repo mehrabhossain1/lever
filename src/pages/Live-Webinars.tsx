@@ -63,95 +63,95 @@ const webinars: Webinar[] = [
         attendees: 1245,
         isLive: true,
     },
-    {
-        id: "2",
-        title: "Building Scalable APIs with Node.js",
-        description:
-            "Discover best practices for creating robust and scalable backend services with Node.js.",
-        date: "May 17, 2025",
-        time: "11:00 AM EST",
-        duration: "90 min",
-        category: "Backend",
-        thumbnail:
-            "https://cdn4.vectorstock.com/i/1000x1000/50/38/online-webinar-or-seminar-with-cartoon-people-flat-vector-27725038.jpg",
-        speakers: [
-            {
-                name: "David Wilson",
-                role: "Backend Architect",
-                avatar: "/placeholder.svg?height=40&width=40",
-            },
-        ],
-        attendees: 876,
-        isLive: true,
-    },
-    {
-        id: "3",
-        title: "Mastering TypeScript: Advanced Types and Patterns",
-        description:
-            "Take your TypeScript skills to the next level with advanced type techniques and design patterns.",
-        date: "May 20, 2025",
-        time: "3:30 PM EST",
-        duration: "75 min",
-        category: "Development",
-        thumbnail:
-            "https://cdn4.vectorstock.com/i/1000x1000/50/38/online-webinar-or-seminar-with-cartoon-people-flat-vector-27725038.jpg",
-        speakers: [
-            {
-                name: "Emily Rodriguez",
-                role: "TypeScript Expert",
-                avatar: "/placeholder.svg?height=40&width=40",
-            },
-        ],
-        attendees: 932,
-        isLive: true,
-    },
-    {
-        id: "4",
-        title: "Framer Motion: Creating Delightful Animations",
-        description:
-            "Learn how to create engaging user experiences with Framer Motion animations in React.",
-        date: "May 22, 2025",
-        time: "1:00 PM EST",
-        duration: "60 min",
-        category: "Design",
-        thumbnail:
-            "https://cdn4.vectorstock.com/i/1000x1000/50/38/online-webinar-or-seminar-with-cartoon-people-flat-vector-27725038.jpg",
-        speakers: [
-            {
-                name: "Alex Turner",
-                role: "Motion Designer",
-                avatar: "/placeholder.svg?height=40&width=40",
-            },
-            {
-                name: "Priya Patel",
-                role: "Frontend Developer",
-                avatar: "/placeholder.svg?height=40&width=40",
-            },
-        ],
-        attendees: 654,
-        isLive: false,
-    },
-    {
-        id: "5",
-        title: "Tailwind CSS and shadcn/ui: Building Beautiful UIs",
-        description:
-            "Discover how to combine Tailwind CSS and shadcn/ui to create stunning user interfaces quickly.",
-        date: "May 25, 2025",
-        time: "10:00 AM EST",
-        duration: "90 min",
-        category: "Design",
-        thumbnail:
-            "https://cdn4.vectorstock.com/i/1000x1000/50/38/online-webinar-or-seminar-with-cartoon-people-flat-vector-27725038.jpg",
-        speakers: [
-            {
-                name: "James Lee",
-                role: "UI Designer",
-                avatar: "/placeholder.svg?height=40&width=40",
-            },
-        ],
-        attendees: 1087,
-        isLive: false,
-    },
+    // {
+    //     id: "2",
+    //     title: "Building Scalable APIs with Node.js",
+    //     description:
+    //         "Discover best practices for creating robust and scalable backend services with Node.js.",
+    //     date: "May 17, 2025",
+    //     time: "11:00 AM EST",
+    //     duration: "90 min",
+    //     category: "Backend",
+    //     thumbnail:
+    //         "https://cdn4.vectorstock.com/i/1000x1000/50/38/online-webinar-or-seminar-with-cartoon-people-flat-vector-27725038.jpg",
+    //     speakers: [
+    //         {
+    //             name: "David Wilson",
+    //             role: "Backend Architect",
+    //             avatar: "/placeholder.svg?height=40&width=40",
+    //         },
+    //     ],
+    //     attendees: 876,
+    //     isLive: true,
+    // },
+    // {
+    //     id: "3",
+    //     title: "Mastering TypeScript: Advanced Types and Patterns",
+    //     description:
+    //         "Take your TypeScript skills to the next level with advanced type techniques and design patterns.",
+    //     date: "May 20, 2025",
+    //     time: "3:30 PM EST",
+    //     duration: "75 min",
+    //     category: "Development",
+    //     thumbnail:
+    //         "https://cdn4.vectorstock.com/i/1000x1000/50/38/online-webinar-or-seminar-with-cartoon-people-flat-vector-27725038.jpg",
+    //     speakers: [
+    //         {
+    //             name: "Emily Rodriguez",
+    //             role: "TypeScript Expert",
+    //             avatar: "/placeholder.svg?height=40&width=40",
+    //         },
+    //     ],
+    //     attendees: 932,
+    //     isLive: true,
+    // },
+    // {
+    //     id: "4",
+    //     title: "Framer Motion: Creating Delightful Animations",
+    //     description:
+    //         "Learn how to create engaging user experiences with Framer Motion animations in React.",
+    //     date: "May 22, 2025",
+    //     time: "1:00 PM EST",
+    //     duration: "60 min",
+    //     category: "Design",
+    //     thumbnail:
+    //         "https://cdn4.vectorstock.com/i/1000x1000/50/38/online-webinar-or-seminar-with-cartoon-people-flat-vector-27725038.jpg",
+    //     speakers: [
+    //         {
+    //             name: "Alex Turner",
+    //             role: "Motion Designer",
+    //             avatar: "/placeholder.svg?height=40&width=40",
+    //         },
+    //         {
+    //             name: "Priya Patel",
+    //             role: "Frontend Developer",
+    //             avatar: "/placeholder.svg?height=40&width=40",
+    //         },
+    //     ],
+    //     attendees: 654,
+    //     isLive: false,
+    // },
+    // {
+    //     id: "5",
+    //     title: "Tailwind CSS and shadcn/ui: Building Beautiful UIs",
+    //     description:
+    //         "Discover how to combine Tailwind CSS and shadcn/ui to create stunning user interfaces quickly.",
+    //     date: "May 25, 2025",
+    //     time: "10:00 AM EST",
+    //     duration: "90 min",
+    //     category: "Design",
+    //     thumbnail:
+    //         "https://cdn4.vectorstock.com/i/1000x1000/50/38/online-webinar-or-seminar-with-cartoon-people-flat-vector-27725038.jpg",
+    //     speakers: [
+    //         {
+    //             name: "James Lee",
+    //             role: "UI Designer",
+    //             avatar: "/placeholder.svg?height=40&width=40",
+    //         },
+    //     ],
+    //     attendees: 1087,
+    //     isLive: false,
+    // },
     {
         id: "6",
         title: "State Management in 2025: Beyond Redux",
