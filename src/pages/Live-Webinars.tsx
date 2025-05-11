@@ -48,14 +48,15 @@ interface Webinar {
 const webinars: Webinar[] = [
     {
         id: "1",
-        title: "Advanced Management of Non-alcoholic Fatty Liver Disease (NAFLD)",
+        title: "PLEX(Plasma Exchange) in Liver Failure patients",
         description:
             "Join leading hepatologists as they discuss the latest diagnostic criteria and treatment approaches for NAFLD and NASH, including emerging pharmacotherapies and lifestyle interventions.",
-        date: "May 15, 2025",
-        time: "2:00 PM EST",
+        date: "May 13, 2025 (Tuesday)",
+        time: "10:30 AM",
         duration: "90 min",
         category: "Clinical Practice",
-        thumbnail: "/placeholder.svg?height=200&width=400",
+        thumbnail:
+            "https://media.istockphoto.com/id/1402652565/video/live-webinar-button-icon-stamp-logo-label-isolated-on-white-background-motion-graphics-4k.jpg?s=640x640&k=20&c=jkkhgLYfRLYecnMk9Bgo8DxjzYHHTe8EFdFgMoVRBis=",
         speakers: [
             {
                 name: "Dr. Sarah Johnson",
@@ -72,161 +73,161 @@ const webinars: Webinar[] = [
         isLive: true,
         isFeatured: true,
     },
-    {
-        id: "2",
-        title: "Hepatitis B: New Therapeutic Targets and Cure Strategies",
-        description:
-            "Discover the latest research on novel antiviral therapies, immunomodulatory approaches, and potential curative strategies for chronic Hepatitis B infection.",
-        date: "May 17, 2025",
-        time: "11:00 AM EST",
-        duration: "75 min",
-        category: "Research",
-        thumbnail: "/placeholder.svg?height=200&width=400",
-        speakers: [
-            {
-                name: "Dr. David Wilson",
-                role: "Professor of Virology and Hepatology",
-                avatar: "/placeholder.svg?height=40&width=40",
-            },
-        ],
-        attendees: 876,
-        isLive: true,
-    },
-    {
-        id: "3",
-        title: "Liver Transplantation: Optimizing Outcomes in Complex Cases",
-        description:
-            "Expert transplant surgeons discuss innovative techniques, patient selection criteria, and post-transplant management strategies for challenging liver transplant cases.",
-        date: "May 20, 2025",
-        time: "3:30 PM EST",
-        duration: "120 min",
-        category: "Surgical Techniques",
-        thumbnail: "/placeholder.svg?height=200&width=400",
-        speakers: [
-            {
-                name: "Dr. Emily Rodriguez",
-                role: "Chief of Transplant Surgery",
-                avatar: "/placeholder.svg?height=40&width=40",
-            },
-            {
-                name: "Dr. Thomas Wright",
-                role: "Transplant Hepatologist",
-                avatar: "/placeholder.svg?height=40&width=40",
-            },
-        ],
-        attendees: 932,
-        isLive: true,
-    },
-    {
-        id: "4",
-        title: "Early Detection and Management of Hepatocellular Carcinoma",
-        description:
-            "Learn about the latest screening protocols, diagnostic imaging techniques, and treatment modalities for early-stage hepatocellular carcinoma in patients with chronic liver disease.",
-        date: "May 22, 2025",
-        time: "1:00 PM EST",
-        duration: "60 min",
-        category: "Diagnostics",
-        thumbnail: "/placeholder.svg?height=200&width=400",
-        speakers: [
-            {
-                name: "Dr. Alex Turner",
-                role: "Director of Liver Cancer Program",
-                avatar: "/placeholder.svg?height=40&width=40",
-            },
-            {
-                name: "Dr. Priya Patel",
-                role: "Interventional Radiologist",
-                avatar: "/placeholder.svg?height=40&width=40",
-            },
-        ],
-        attendees: 654,
-        isLive: false,
-    },
-    {
-        id: "5",
-        title: "Autoimmune Liver Diseases: From Pathogenesis to Treatment",
-        description:
-            "This comprehensive webinar covers the latest understanding of autoimmune hepatitis, primary biliary cholangitis, and primary sclerosing cholangitis, with focus on diagnostic approaches and therapeutic strategies.",
-        date: "May 25, 2025",
-        time: "10:00 AM EST",
-        duration: "90 min",
-        category: "Treatment Advances",
-        thumbnail: "/placeholder.svg?height=200&width=400",
-        speakers: [
-            {
-                name: "Dr. James Lee",
-                role: "Professor of Immunology and Hepatology",
-                avatar: "/placeholder.svg?height=40&width=40",
-            },
-        ],
-        attendees: 1087,
-        isLive: false,
-    },
-    {
-        id: "6",
-        title: "Alcoholic Liver Disease: New Insights and Therapeutic Approaches",
-        description:
-            "Explore recent advances in understanding the pathophysiology of alcoholic liver disease and emerging pharmacological and non-pharmacological interventions for patients with alcohol-related liver injury.",
-        date: "May 28, 2025",
-        time: "4:00 PM EST",
-        duration: "75 min",
-        category: "Clinical Practice",
-        thumbnail: "/placeholder.svg?height=200&width=400",
-        speakers: [
-            {
-                name: "Dr. Olivia Martinez",
-                role: "Hepatology Research Director",
-                avatar: "/placeholder.svg?height=40&width=40",
-            },
-        ],
-        attendees: 789,
-        isLive: false,
-    },
-    {
-        id: "7",
-        title: "Pediatric Hepatology: Managing Rare Liver Disorders in Children",
-        description:
-            "Pediatric liver specialists discuss diagnosis and management of rare liver disorders in children, including biliary atresia, progressive familial intrahepatic cholestasis, and metabolic liver diseases.",
-        date: "June 2, 2025",
-        time: "1:30 PM EST",
-        duration: "90 min",
-        category: "Patient Care",
-        thumbnail: "/placeholder.svg?height=200&width=400",
-        speakers: [
-            {
-                name: "Dr. Robert Kim",
-                role: "Chief of Pediatric Hepatology",
-                avatar: "/placeholder.svg?height=40&width=40",
-            },
-            {
-                name: "Dr. Lisa Chen",
-                role: "Pediatric Transplant Specialist",
-                avatar: "/placeholder.svg?height=40&width=40",
-            },
-        ],
-        attendees: 542,
-        isLive: false,
-    },
-    {
-        id: "8",
-        title: "Liver Fibrosis: Non-invasive Assessment and Antifibrotic Therapies",
-        description:
-            "This webinar covers the latest non-invasive methods for assessing liver fibrosis and discusses emerging antifibrotic therapies currently in clinical trials for various chronic liver diseases.",
-        date: "June 5, 2025",
-        time: "11:00 AM EST",
-        duration: "60 min",
-        category: "Research",
-        thumbnail: "/placeholder.svg?height=200&width=400",
-        speakers: [
-            {
-                name: "Dr. Andrew Parker",
-                role: "Director of Hepatology Research",
-                avatar: "/placeholder.svg?height=40&width=40",
-            },
-        ],
-        attendees: 876,
-        isLive: false,
-    },
+    // {
+    //     id: "2",
+    //     title: "Hepatitis B: New Therapeutic Targets and Cure Strategies",
+    //     description:
+    //         "Discover the latest research on novel antiviral therapies, immunomodulatory approaches, and potential curative strategies for chronic Hepatitis B infection.",
+    //     date: "May 17, 2025",
+    //     time: "11:00 AM EST",
+    //     duration: "75 min",
+    //     category: "Research",
+    //     thumbnail: "/placeholder.svg?height=200&width=400",
+    //     speakers: [
+    //         {
+    //             name: "Dr. David Wilson",
+    //             role: "Professor of Virology and Hepatology",
+    //             avatar: "/placeholder.svg?height=40&width=40",
+    //         },
+    //     ],
+    //     attendees: 876,
+    //     isLive: true,
+    // },
+    // {
+    //     id: "3",
+    //     title: "Liver Transplantation: Optimizing Outcomes in Complex Cases",
+    //     description:
+    //         "Expert transplant surgeons discuss innovative techniques, patient selection criteria, and post-transplant management strategies for challenging liver transplant cases.",
+    //     date: "May 20, 2025",
+    //     time: "3:30 PM EST",
+    //     duration: "120 min",
+    //     category: "Surgical Techniques",
+    //     thumbnail: "/placeholder.svg?height=200&width=400",
+    //     speakers: [
+    //         {
+    //             name: "Dr. Emily Rodriguez",
+    //             role: "Chief of Transplant Surgery",
+    //             avatar: "/placeholder.svg?height=40&width=40",
+    //         },
+    //         {
+    //             name: "Dr. Thomas Wright",
+    //             role: "Transplant Hepatologist",
+    //             avatar: "/placeholder.svg?height=40&width=40",
+    //         },
+    //     ],
+    //     attendees: 932,
+    //     isLive: true,
+    // },
+    // {
+    //     id: "4",
+    //     title: "Early Detection and Management of Hepatocellular Carcinoma",
+    //     description:
+    //         "Learn about the latest screening protocols, diagnostic imaging techniques, and treatment modalities for early-stage hepatocellular carcinoma in patients with chronic liver disease.",
+    //     date: "May 22, 2025",
+    //     time: "1:00 PM EST",
+    //     duration: "60 min",
+    //     category: "Diagnostics",
+    //     thumbnail: "/placeholder.svg?height=200&width=400",
+    //     speakers: [
+    //         {
+    //             name: "Dr. Alex Turner",
+    //             role: "Director of Liver Cancer Program",
+    //             avatar: "/placeholder.svg?height=40&width=40",
+    //         },
+    //         {
+    //             name: "Dr. Priya Patel",
+    //             role: "Interventional Radiologist",
+    //             avatar: "/placeholder.svg?height=40&width=40",
+    //         },
+    //     ],
+    //     attendees: 654,
+    //     isLive: false,
+    // },
+    // {
+    //     id: "5",
+    //     title: "Autoimmune Liver Diseases: From Pathogenesis to Treatment",
+    //     description:
+    //         "This comprehensive webinar covers the latest understanding of autoimmune hepatitis, primary biliary cholangitis, and primary sclerosing cholangitis, with focus on diagnostic approaches and therapeutic strategies.",
+    //     date: "May 25, 2025",
+    //     time: "10:00 AM EST",
+    //     duration: "90 min",
+    //     category: "Treatment Advances",
+    //     thumbnail: "/placeholder.svg?height=200&width=400",
+    //     speakers: [
+    //         {
+    //             name: "Dr. James Lee",
+    //             role: "Professor of Immunology and Hepatology",
+    //             avatar: "/placeholder.svg?height=40&width=40",
+    //         },
+    //     ],
+    //     attendees: 1087,
+    //     isLive: false,
+    // },
+    // {
+    //     id: "6",
+    //     title: "Alcoholic Liver Disease: New Insights and Therapeutic Approaches",
+    //     description:
+    //         "Explore recent advances in understanding the pathophysiology of alcoholic liver disease and emerging pharmacological and non-pharmacological interventions for patients with alcohol-related liver injury.",
+    //     date: "May 28, 2025",
+    //     time: "4:00 PM EST",
+    //     duration: "75 min",
+    //     category: "Clinical Practice",
+    //     thumbnail: "/placeholder.svg?height=200&width=400",
+    //     speakers: [
+    //         {
+    //             name: "Dr. Olivia Martinez",
+    //             role: "Hepatology Research Director",
+    //             avatar: "/placeholder.svg?height=40&width=40",
+    //         },
+    //     ],
+    //     attendees: 789,
+    //     isLive: false,
+    // },
+    // {
+    //     id: "7",
+    //     title: "Pediatric Hepatology: Managing Rare Liver Disorders in Children",
+    //     description:
+    //         "Pediatric liver specialists discuss diagnosis and management of rare liver disorders in children, including biliary atresia, progressive familial intrahepatic cholestasis, and metabolic liver diseases.",
+    //     date: "June 2, 2025",
+    //     time: "1:30 PM EST",
+    //     duration: "90 min",
+    //     category: "Patient Care",
+    //     thumbnail: "/placeholder.svg?height=200&width=400",
+    //     speakers: [
+    //         {
+    //             name: "Dr. Robert Kim",
+    //             role: "Chief of Pediatric Hepatology",
+    //             avatar: "/placeholder.svg?height=40&width=40",
+    //         },
+    //         {
+    //             name: "Dr. Lisa Chen",
+    //             role: "Pediatric Transplant Specialist",
+    //             avatar: "/placeholder.svg?height=40&width=40",
+    //         },
+    //     ],
+    //     attendees: 542,
+    //     isLive: false,
+    // },
+    // {
+    //     id: "8",
+    //     title: "Liver Fibrosis: Non-invasive Assessment and Antifibrotic Therapies",
+    //     description:
+    //         "This webinar covers the latest non-invasive methods for assessing liver fibrosis and discusses emerging antifibrotic therapies currently in clinical trials for various chronic liver diseases.",
+    //     date: "June 5, 2025",
+    //     time: "11:00 AM EST",
+    //     duration: "60 min",
+    //     category: "Research",
+    //     thumbnail: "/placeholder.svg?height=200&width=400",
+    //     speakers: [
+    //         {
+    //             name: "Dr. Andrew Parker",
+    //             role: "Director of Hepatology Research",
+    //             avatar: "/placeholder.svg?height=40&width=40",
+    //         },
+    //     ],
+    //     attendees: 876,
+    //     isLive: false,
+    // },
 ];
 
 // Get all unique categories
@@ -342,7 +343,7 @@ export default function LiveWebinars() {
                     <div className="inline-block mb-4 bg-gradient-to-r from-blue-600 to-sky-400 text-white px-4 py-1 rounded-full text-sm font-medium">
                         Advancing Liver Health Education
                     </div>
-                    <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 bg-gradient-to-r from-blue-600 to-sky-400 bg-clip-text text-transparent">
+                    <h1 className="pb-2 text-4xl md:text-5xl font-bold tracking-tight mb-4 bg-gradient-to-r from-blue-600 to-sky-400 bg-clip-text text-transparent">
                         Hepatology Live Webinars
                     </h1>
                     <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
