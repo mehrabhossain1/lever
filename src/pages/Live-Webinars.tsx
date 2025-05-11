@@ -21,6 +21,7 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Input } from "@/components/ui/input";
+import { useNavigate } from "react-router-dom";
 
 // Define TypeScript interfaces
 interface Speaker {
@@ -665,13 +666,16 @@ function WebinarCard({
     index: number;
     getTimeUntil: (date: string, time: string) => string;
 }) {
+    const navigate = useNavigate();
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             whileHover={{ y: -5 }}
-            className="h-full"
+            className="h-full cursor-pointer"
+            onClick={() => navigate(`/live-webinars/${webinar.title}`)}
         >
             <Card className="h-full flex flex-col overflow-hidden border-sky-100 hover:shadow-xl hover:shadow-sky-100/50 transition-all duration-300">
                 <div className="relative">
