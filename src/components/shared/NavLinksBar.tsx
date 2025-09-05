@@ -10,10 +10,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"; // sh
 const links = [
     { name: "Home", path: "/" },
     { name: "Live Webinars", path: "/live-webinars" },
-    {
-        name: "Hepatobiliary surgeons profile",
-        path: "/surgeons-profile",
-    },
+    { name: "All Hepatologist, Hepatobiliary Surgeon, Interventiona list", path: "/hepatologist-surgeon-interventiona" },
+    { name: "Guidelines", path: "/guidelines" },
     { name: "Video/Photo Gallery", path: "/gallery" },
     { name: "Case Presentations", path: "/cases" },
     { name: "BSLCTRcon", path: "/bslctrcon" },
