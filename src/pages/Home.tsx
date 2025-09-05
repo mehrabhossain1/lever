@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import MessageFromChairman from "@/components/MessageFromChairman";
+import MessageFromTreasurer from "@/components/MessageFromTreasurer";
 import PhotoGallery from "@/components/PhotoGallery";
 import RecentUpdates from "@/components/RecentUpdates";
 // import YouTubeLive from "@/components/YoutubeLive";
@@ -17,6 +18,7 @@ const Home = () => {
       <PhotoGallery />
       <RecentUpdates />
       <MessageFromChairman />
+      <MessageFromTreasurer />
     </div>
   );
 };
